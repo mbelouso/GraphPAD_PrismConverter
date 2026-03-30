@@ -52,7 +52,7 @@ from prism_parser import parse_prism
 sheets = parse_prism("Prism_Data.prism")
 
 for title, sheet in sheets.items():
-    print(sheet.graph_title)  # e.g. "CAMYEN-Giantin + GLP-1R"
+    print(sheet.graph_title)  # e.g. "CAMYEN"
     print(sheet.xlabel)       # e.g. "time (min)"
     print(sheet.ylabel)       # e.g. "BRET"
     print(sheet.df.head())    # pandas DataFrame with X + MultiIndex Y columns
