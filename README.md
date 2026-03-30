@@ -14,7 +14,7 @@ Python utility to extract and plot data from GraphPad Prism `.prism` files (Pris
 ### Create the conda environment
 
 ```bash
-conda create -n prism python=3.12 pandas numpy matplotlib jupyter -y
+conda create -n prism python=3.12 pandas numpy matplotlib scipy jupyter -y
 conda activate prism
 ```
 
@@ -42,7 +42,7 @@ Open `explore_prism.ipynb` and run all cells. The first cell contains configurat
 | `X_MIN` | `0` | X-axis start (minutes) |
 | `X_MAX` | `30` | X-axis end (minutes) |
 
-Plots are saved as PNG files in the working directory, named after the graph title (e.g. `CAMYEN-Giantin_+_GLP-1R.png`).
+Plots are saved as PNG files in the working directory, named after the graph title (e.g. `CAMYEN_GLP-1R.png`).
 
 ### Python API
 
@@ -79,4 +79,10 @@ Prism_Data.prism         # Example data file
 - pandas
 - numpy
 - matplotlib
+- scipy
 - jupyter (for the notebook)
+
+## Acknowledgements
+
+Notebook structure, plot types, and export logic developed with the assistance of
+[GitHub Copilot](https://github.com/features/copilot) (Claude Sonnet 4.6).
